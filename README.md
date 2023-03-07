@@ -28,7 +28,7 @@ npm install
 npm run start [Server up on local]
 ```
 
-### Built With
+## Built With
 
 List all dependencies used in this project.
 
@@ -47,7 +47,7 @@ List all dependencies used in this project.
 npm run test
 ```
 
-### Enviroment variables
+## Enviroment variables
 
 This are necessary variables in .env file for server up.
 
