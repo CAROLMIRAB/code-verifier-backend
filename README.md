@@ -28,11 +28,30 @@ npm install
 npm run start [Server up on local]
 ```
 
+### Built With
+
+List all dependencies used in this project.
+
+- [![Dotenv][dotenv.js]][for enviroment variables]
+- [![Express][express.js]][framework nodejs]
+- [![Typescript][typescript]][]
+- [![Eslint][eslint.js]][]
+- [![Concurrently][concurrently]][]
+- [![Jest][jest]][]
+- [![Webpack][webpack]][]
+- [![Nodemon][nodemon]][]
+
 ## Run tests
 
 ```sh
 npm run test
 ```
+
+### Enviroment variables
+
+This are necessary variables in .env file for server up.
+
+PORT=3000
 
 ## Author
 
