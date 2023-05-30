@@ -1,6 +1,7 @@
 import { BasicResponse } from "./types";
 import { IHelloController } from "./interfaces";
-import { LogSuccess } from "@/utils/logger";
+import { LogSuccess } from "../utils/logger";
+import express, { Request, Response } from 'express';
 
 export class HelloController implements IHelloController {
 
@@ -9,6 +10,8 @@ export class HelloController implements IHelloController {
     return {
       message: `Hello, ${name || "World"}`
     }
+
+
   }
 
 }

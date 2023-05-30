@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
-import server from '@/server'
+import server from './src/server'
 import { Server } from 'http';
-import { LogError, LogSuccess } from '@/utils/logger';
+import { LogError, LogSuccess } from './src/utils/logger';
 
 dotenv.config();
 

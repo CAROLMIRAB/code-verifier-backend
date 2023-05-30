@@ -4,6 +4,9 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import helmet from 'helmet'
 import rootRouter from '../routes'
+import mongoose, { Schema, model, connect } from 'mongoose';
+
+import Joi from 'joi';
 
 dotenv.config();
 
