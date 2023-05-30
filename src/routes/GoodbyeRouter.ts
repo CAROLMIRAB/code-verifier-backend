@@ -1,18 +1,18 @@
 import express, { Request, Response, json } from "express";
-import { HelloController } from "../controller/HelloController";
+import { GoodbyeController } from "../controller/GoodbyeController";
 import { LogInfo } from "../utils/logger";
 
 //Router from express 
-let helloRouter = express.Router();
+let goodbyeRouter = express.Router();
 
 
 //http://localhost:8000/api/hello?name=Martin/
-helloRouter.route('/')
+goodbyeRouter.route('/')
   .get(async (req: Request, res: Response) => {
     let name: any = req?.query?.name
     LogInfo(`Query Param: ${name}`)
     //Controller instance
-    const controller: HelloController = new HelloController()
+    const controller: GoodbyeController = new GoodbyeController()
     const response = await controller.getMessage(name)
 
     return res.send(response)
@@ -20,4 +20,7 @@ helloRouter.route('/')
   })
 
 
-export default helloRouter
+
+
+
+export default goodbyeRouter
